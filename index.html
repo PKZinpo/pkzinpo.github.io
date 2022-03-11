@@ -7,25 +7,6 @@
 <html>
 	<head>
 		<title>Matthew Quach</title>
-		<style>
-			.pkzinpo {
-				margin-bottom: -100px;
-				width: 50%;
-			}
-			.center {
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-			}
-			.topheader {
-				position: sticky;
-			}
-			.projecthome {
-				display: block;
-				margin-left: auto;
-				margin-right: auto;	
-			}
-		</style>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -72,7 +53,24 @@
 									<header class="home">
 										<h2 class="align-center">Projects</h2>
 									</header>
-									<a href="#" class="image"><img src="images/ScreenShot1.png" alt="" width="854" height="480"/></a>
+									<div class="slideshow-container">
+										<div class="mySlides fade">
+										  <img src="images/JadeRoom.png" style="width:100%;border-radius: 10px;">
+										  <div class="text"><i>Jade Room </i> is a short 2-D platformer made for Indie Tales Jam</div>
+										</div>
+										<div class="mySlides fade">
+										  <img src="images/ScreenShot1.png" style="width:100%;border-radius: 10px;">
+										  <div class="text"><i>Two Worlds </i> is an isometric 2-D puzzle game</div>
+										</div>
+										<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+										<a class="next" onclick="plusSlides(1)">&#10095;</a>
+									</div>
+									<br>
+									<div style="text-align:center">
+										<span class="dot" onclick="currentSlide(1)"></span> 
+										<span class="dot" onclick="currentSlide(2)"></span> 
+									</div>
+
 									<h3>Interdum aenean</h3>
 									<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 									<div class="features">
@@ -247,6 +245,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/slideshow.js"></script>
 
 	</body>
 </html>
