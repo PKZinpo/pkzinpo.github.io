@@ -262,7 +262,34 @@ hr {
   clear: both;
 }
 
+/* Small Slideshow */
+
+.smallslideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+.smallprev, .smallnext {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
 /* Slideshow */
+.mySlides1, .mySlides2 {
+  display: none
+}
+
 .slideshow-container {
   max-width: 1275px;
   position: relative;
@@ -282,6 +309,7 @@ hr {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  background-color: rgba(0, 0, 0, 0.308);
 }
 
 .next {
@@ -305,7 +333,7 @@ hr {
   border-radius: 0 0 10px 10px;
 }
 
-.dot {
+.dots1, .dots2 {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -2189,6 +2217,44 @@ button,
         position: absolute;
         top: 1em;
         width: 5em; } }
+
+/* Footer */
+#bottomheader {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  border-top: solid 5px #54d2b4;
+  padding: 1em 0 1em 0;
+  position: relative; }
+  #bottomheader > * {
+    -moz-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-top: 0; }
+  #bottomheader .logo {
+    border-top: 0;
+    color: inherit;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.125em; }
+  #bottomheader .icons {
+    text-align: right; }
+  @media screen and (max-width: 1680px) {
+    #bottomheader {
+      padding-bottom: 5em; } }
+  @media screen and (max-width: 736px) {
+    #bottomheader {
+      padding-bottom: 6.5em; }
+      #bottomheader .logo {
+        font-size: 1.25em;
+        margin: 0; }
+      #bottomheader .icons {
+        height: 5em;
+        line-height: 5em;
+        position: absolute;
+        right: -0.5em;
+        bottom: 0; } }
 
 /* Header */
 #header {
