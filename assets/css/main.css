@@ -239,6 +239,11 @@ hr {
   margin-left: auto;
   margin-right: auto;
 }
+.center ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
 .topheader {
   position: sticky;
 }
@@ -246,6 +251,15 @@ hr {
   width: 80%;
   height: auto;
   object-fit: contain;
+}
+.column {
+  float: left;
+  width: 50%
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Slideshow */
