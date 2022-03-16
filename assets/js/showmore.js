@@ -5,7 +5,6 @@ const holder = document.querySelector('.project-holder');
 holder.addEventListener('click', e => {
     const current = e.target;
 
-
     const isReadMoreBtn = current.className.includes('read-more-btn');
 
     if (!isReadMoreBtn) return;
