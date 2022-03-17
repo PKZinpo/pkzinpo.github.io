@@ -230,6 +230,32 @@ hr {
 
 
 /* Custom */
+.hidden-project {
+  display: none;
+}
+.show-project {
+  display: block;
+}
+
+#projectmain {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+#projectmain-fade {
+  opacity: 0;
+}
+
+.zoom {
+  transition: transform .2s;
+  margin: 0 auto;
+}
+.zoom:hover {
+  transform: scale(1.2);
+}
 .section-break {
   padding-bottom: 3em;
   border-top: dashed 2px rgba(210, 215, 217, 0.75);
