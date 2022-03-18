@@ -49,15 +49,15 @@
 								<div class="row">
 									<div class="column">
 										<header>
-											<a href="#" id="TwoWorlds"><p style="text-align:center; font-size:+2.5em; margin-top: -50px"><strong>Two Worlds</strong></p></a>
+											<a href="#"  onclick="ToProject('projectmain','TwoWorlds')"><p style="text-align:center; font-size:+2.5em; margin-top: -50px"><strong>Two Worlds</strong></p></a>
 										</header>
-										<a href="#"><img class="zoom" src="images/TwoWorldsTitle.png" style="width:100%;border-radius: 10px;margin-top: -50px;"></a>
+										<a href="#" onclick="ToProject('projectmain','TwoWorlds')"><img  class="zoom" src="images/TwoWorldsTitle.png" style="width:100%;border-radius: 10px;margin-top: -50px;"></a>
 									</div>
 									<div class="column">
 										<header>
-											<a href="#" id="GravBall"><p style="text-align:center; font-size:+2.5em; margin-top: -50px"><strong>Unfinished Unity3D Project</strong></p></a>
+											<a href="#"  onclick="ToProject('projectmain','GravBall')"><p style="text-align:center; font-size:+2.5em; margin-top: -50px"><strong>Unfinished Unity3D Project</strong></p></a>
 										</header>
-										<a href="#"><img class="zoom" src="images/GravBall.png" style="width:100%;border-radius: 10px;margin-top: -50px;"></a>
+										<a href="#"  onclick="ToProject('projectmain','GravBall')"><img class="zoom" src="images/GravBall.png" style="width:100%;border-radius: 10px;margin-top: -50px;"></a>
 									</div>
 								</div>
 								</br>
@@ -67,12 +67,11 @@
 							<section>
 								<div style="margin-top: -50px">
 									<header>
-										<a href="#" id="EnherjarSynergy"></a>
-										<a href="#"><p style="text-align:center; font-size:+2.5em; margin-top: -50px"><strong>Enherjar Synergy</strong></p></a>
+										<a href="#"  onclick="ToProject('projectmain','EnherjarSynergy')"><p style="text-align:center; font-size:+2.5em; margin-top: -50px"><strong>Enherjar Synergy</strong></p></a>
 									</header>
 								</div>
 								<div>
-									<img class="center zoom" src="images/EnherjarSynergyTitle.png" style="width:50%;border-radius: 10px;margin-top: -50px;">
+									<img onclick="ToProject('projectmain','EnherjarSynergy')" class="center zoom" src="images/EnherjarSynergyTitle.png" style="width:50%;border-radius: 10px;margin-top: -50px;">
 								</div>
 
 							</section>
@@ -82,43 +81,172 @@
 								<div class="row">
 									<div class="column">
 										<header>
-											<a href="#" id="JadeRoom"><p style="text-align:center; font-size:+2.5em; margin-top: -50px"><strong>Jade Room</strong></p></a>
+											<a href="#" onclick="ToProject('projectmain','JadeRoom')"><p style="text-align:center; font-size:+2.5em; margin-top: -50px"><strong>Jade Room</strong></p></a>
 										</header>
-											<a href="#"><img class="zoom" src="images/JadeRoomTitle.png" style="width:100%;border-radius: 10px;margin-top: -50px;" ></a>
+										<a href="#" onclick="ToProject('projectmain','JadeRoom')"><img class="zoom" src="images/JadeRoomTitle.png" style="width:100%;border-radius: 10px;margin-top: -50px;" ></a>
 									</div>
 									<div class="column">
 										<header>
-										<a href="#" id="ParcelPanic"><p style="text-align:center; font-size:+2.5em; margin-top: -50px"><strong>Parcel Panic</strong></p></a>
+											<a href="#" onclick="ToProject('projectmain','ParcelPanic')"><p style="text-align:center; font-size:+2.5em; margin-top: -50px"><strong>Parcel Panic</strong></p></a>
 										</header>
-										<a href="#"><img class="zoom" src="images/ParcelPanicTitle.png" style="width:100%;border-radius: 10px;margin-top: -50px;"></a>
+										<a href="#" onclick="ToProject('projectmain','ParcelPanic')"><img class="zoom" src="images/ParcelPanicTitle.png" style="width:100%;border-radius: 10px;margin-top: -50px;"></a>
 									</div>
 								</div>
 							</section>
 						</div>
 						
 						<!-- Two Worlds -->
-						<div id="TwoWorld" class="inner hidden-project">
-							<button>Back to Projects</button>
+						<div id="TwoWorlds" class="inner hidden-project">
+							<br>
+							<button onclick="ToProject('TwoWorlds','projectmain')">Back to Projects</button>
+							<a><img class="project-title center" src="images/TwoWorldsName.png" style="width:100%;border-radius: 10px;"></a>
+							<div class="row">
+								<div class="column-project-text">
+									<p style="font-size: 1.1em;">Two Worlds is a 2-D isometric puzzle game where you have to get the cube from start to finish.
+										The game currently consists of 9 short levels that start out simple and get more complicated as you progress.<br><br>
+										<a href="https://pkzinpo.itch.io/two-worlds">The game can be downloaded and played here.</a>
+									</p>
+									<div class="section-break"></div>
+									<p style="font-size: 1.1em;">
+										This is my first game that I had started working on in Unity and it was used primarily to get used to the whole framework 
+										and workflow. I initially had thought that the development of the project would be relatively simple but there was a 
+										lot of issues regarding sprite sorting among other things that extended the estimated finish date by a decent margin. However, 
+										as eager as I was on my first project, it was definitely a great learning experience as I was developing my knowledge with working 
+										with Unity and turned out to be a relaxing little puzzle game.<br><br>
+										The initial idea for the puzzle game came when I was watching one of my favorite game dev youtubers for pixel art and saw he had 
+										made a video on isometric pixel art tiles. Since the project itself was more of a learning process for myself rather than making 
+										an actual game, I had thought that I would do a simple yet unique puzzle game that consisted of two worlds: one world has the player 
+										where he/she can move around in and the other world has statues that can alter the main world's tiles. This along with the 
+										isometric pixel art style was something that I found very pleasant to design. The original thought process was to make the game for the mobile platform which is actually why the game is played only using the 
+										mouse. However, since the project was just a learning experience, I decided to just leave it as a very short PC game.<br><br>
+										The game has:
+										<ul style="margin-top: -30px;font-size: 1.1em;">
+											<li>9 different levels of varying difficulty</li>
+											<li>Click-only gameplay so only a mouse is needed</li>
+											<li>Pause menu functionality so players can quit the level, mute sound or mute music</li>
+											<li>A save and load system so players can start at the level they left off</li>
+											<li>2-D animated pixel sprites and tiles all created using Aseprite</li>
+											<li>A title soundtrack and a main game sound track composed in FL Studio 20</li>
+											<li>Same tune used for both worlds but played differently to emulate the feeling of different worlds</li>
+											<li>A tutorial system</li>
+										</ul>
+									</p>
+								</div>
+								<div class="column-project-image">
+									<img class="column-image" src="images/TwoWorldsGIF1.gif" style="width:100%;border-radius: 10px;float: right">
+									<img class="column-image" src="images/TwoWorldsGIF2.gif" style="width:100%;border-radius: 10px;float: right">
+									<img class="column-image" src="images/TwoWorlds.png" style="width:100%;border-radius: 10px;float: right">
+									<img class="column-image" src="images/TwoWorlds2.png" style="width:100%;border-radius: 10px;float: right">
+									<img class="column-image" src="images/TwoWorlds3.png" style="width:100%;border-radius: 10px;float: right">
+								</div>
+							</div>
 						</div>
 						
 						<!-- GravBall -->
 						<div id="GravBall" class="inner hidden-project">
-							<button>Back to Projects</button>
+							<br>
+							<button onclick="ToProject('GravBall','projectmain')">Back to Projects</button>
 						</div>
 
 						<!-- Enherjar Synergy -->
 						<div id="EnherjarSynergy" class="inner hidden-project">
-							<button>Back to Projects</button>
+							<br>
+							<button onclick="ToProject('EnherjarSynergy','projectmain')">Back to Projects</button>
 						</div>
 
 						<!-- Jade Room -->
 						<div id="JadeRoom" class="inner hidden-project">
-							<button>Back to Projects</button>
+							<br>
+							<button onclick="ToProject('JadeRoom','projectmain')">Back to Projects</button>
+							<a><img class="project-title center" src="images/JadeRoomName.png" style="width:100%;border-radius: 10px;"></a>
+							<div class="row">
+								<div class="column-project-text">
+									<p style="font-size: 1.1em;">The Jade Room is a 2-D pixel art platformer made for the game jam Indie Tales Jam.
+										The game consists of 3 very short levels with simple platforming.<br><br>
+										<a href="https://pkzinpo.itch.io/jaderoom">The game can be downloaded and played here.</a>
+									</p>
+									<div class="section-break"></div>
+									<p style="font-size: 1.1em;">
+										The game jam that this game was made and submitted for was the first game jam I had ever done. With the given time frame 
+										of about 72 hours, I felt that it would be a good chance to use some more of the tools that Unity had to offer which 
+										included the in-built lighting system. I had joined this game jam shortly after I had started working on 
+										<a href="#" onclick="ToProject('JadeRoom','TwoWorlds')">Two Worlds</a> which allowed me to explore in-depth sprite sheet 
+										implementation, sprite animations and camera movements.<br><br> 
+										The idea in itself is not very unique since it is just a very generic 2-D platformer with a partially amusing storyline. 
+										You play as a character who attempts to steal a jade from a temple, but with each attempt more obstacles/enemies appear. 
+										The dialogue in the game shows your character communicating with your boss/leader who likes to joke around and makes sure 
+										that you are doing your job. I mainly saw this game as a means of coming up with an idea for a project and finishing it. 
+										Given that my initial ideas for the game involved having 5 levels with much more difficult platforming, I think that this 
+										helped me understand and shrink my scope so that I could at least finish something. That is what I think game jams are 
+										all about, putting a finished game product out there. My whole first experience of a game jam sums up what I believe 
+										to be the importance of making any game, which is to understand the scope and design of your game and finishing/putting 
+										something out there no matter what.<br><br>
+
+										The game has:
+										<ul style="margin-top: -30px;font-size: 1.1em;">
+											<li>3 different levels of varying difficulty</li>
+											<li>Keyboard controls</li>
+											<li>Pause functionality</li>
+											<li>2-D pixel sprites and animations all created using Aseprite</li>
+											<li>A main game sound track composed in Bosca Ceoil</li>
+											<li>A simple tutorial system implemented during levels</li>
+											<li>Usage of Unity's 2-D light system</li>
+										</ul>
+									</p>
+								</div>
+								<div class="column-project-image">
+									<img class="column-image" src="images/JadeRoomGIF.gif" style="width:100%;border-radius: 10px;float: right">
+									<img class="column-image" src="images/JadeRoom.png" style="width:100%;border-radius: 10px;float: right">
+									<img class="column-image" src="images/JadeRoom2.png" style="width:100%;border-radius: 10px;float: right">
+									<img class="column-image" src="images/JadeRoom3.png" style="width:100%;border-radius: 10px;float: right">
+								</div>
+							</div>
 						</div>
 
 						<!-- Parcel Panic -->
 						<div id="ParcelPanic" class="inner hidden-project">
-							<button>Back to Projects</button>
+							<br>
+							<button onclick="ToProject('ParcelPanic','projectmain')">Back to Projects</button>
+							<a><img class="project-title center" src="images/ParcelPanicName.png" style="width:100%;border-radius: 10px;"></a>
+							<div class="row">
+								<div class="column-project-text">
+									<p style="font-size: 1.1em;">Parcel Panic is a 2-D pixel art arcade-style game made for game jam Ludum Dare 49.
+										The game consists of a fast-paced highscore system where the player must deliver parcels to their respective
+										locations before energy runs out.<br><br>
+										<a href="https://pkzinpo.itch.io/parcel-panic">The game can be played in browser here.</a>
+									</p>
+									<div class="section-break"></div>
+									<p style="font-size: 1.1em;">
+										After the experience with <a href="#" onclick="ToProject('ParcelPanic','JadeRoom')">Jade Room</a>, I came to an understanding 
+										of how to shrink my scope down to a fun and unique concept that would not take extremely long to develop the mechanics for.  
+										which allowed me to explore in-depth sprite sheet 
+										implementation, sprite animations and camera movements.<br><br> 
+										The idea in itself is not very unique since it is just a very generic 2-D platformer with a partially amusing storyline. 
+										You play as a character who attempts to steal a jade from a temple, but with each attempt more obstacles/enemies appear. 
+										The dialogue in the game shows your character communicating with your boss/leader who likes to joke around and makes sure 
+										that you are doing your job. I mainly saw this game as a means of coming up with an idea for a project and finishing it. 
+										At least, that is what I think game jams are all about, putting a finished game product out there no matter what. 
+										The whole experience of finally finishing a product regardless of how good (or bad) was something that I felt is very important, 
+										and experiencing that for the first time helped me realize the importance of simply just getting something out there.<br><br>
+
+										The game has:
+										<ul style="margin-top: -30px;font-size: 1.1em;">
+											<li>3 different levels of varying difficulty</li>
+											<li>Keyboard controls</li>
+											<li>Pause functionality</li>
+											<li>2-D pixel sprites and animations all created using Aseprite</li>
+											<li>A main game sound track composed in Bosca Ceoil</li>
+											<li>A simple tutorial system implemented during levels</li>
+											<li>Usage of Unity's 2-D light system</li>
+										</ul>
+									</p>
+								</div>
+								<div class="column-project-image">
+									<img class="column-image" src="images/ParcelPanicGIF.gif" style="width:100%;border-radius: 10px;float: right">
+									<img class="column-image" src="images/ParcelPanic1.png" style="width:100%;border-radius: 10px;float: right">
+									<img class="column-image" src="images/ParcelPanic.png" style="width:100%;border-radius: 10px;float: right">
+								</div>
+							</div>
 						</div>
 
 					</div>
@@ -171,6 +299,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/slideshow.js"></script>
-
+			<script src="assets/js/script.js"></script>
 	</body>
 </html>

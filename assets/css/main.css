@@ -230,6 +230,11 @@ hr {
 
 
 /* Custom */
+.project-title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
 .hidden-project {
   display: none;
 }
@@ -297,6 +302,17 @@ hr {
 .column {
   float: left;
   width: 50%
+}
+.column-project-text {
+  float: left;
+  width: 60%
+}
+.column-project-image {
+  float: right;
+  width: 40%;
+}
+.column-image {
+  margin-bottom: 30px;
 }
 .row:after {
   content: "";
