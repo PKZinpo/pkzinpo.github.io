@@ -344,7 +344,7 @@
 										<li><a href="index.html">Homepage</a></li>
 										<li><a href="Projects.html">Game Projects</a></li>
 										<li><a href="Art.html">Art</a></li>
-										<li><a href="Music.html">Music</a></li>
+										<!--<li><a href="Music.html">Music</a></li>-->
 										<li><a href="Background.html">Background</a></li>
 									</ul>
 								</nav>
@@ -362,9 +362,9 @@
 								</ul>
 							</section>
 
-						<!-- Footer -->
+							<!-- Footer -->
 							<footer id="footer">
-								<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								<p class="copyright">&copy; Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 							</footer>
 
 						</div>
@@ -380,5 +380,16 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/slideshow.js"></script>
 			<script src="assets/js/script.js"></script>
+			<script>
+				if (window.location.hash === '#TwoWorlds') {
+					ToProject('projectmain','TwoWorlds');
+				}
+				else if (window.location.hash === '#JadeRoom') {
+					ToProject('projectmain','JadeRoom');
+				}
+				else if (window.location.hash === '#ParcelPanic') {
+					ToProject('projectmain','ParcelPanic');
+				}
+			</script>
 	</body>
 </html>

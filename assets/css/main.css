@@ -311,6 +311,9 @@ hr {
   float: right;
   width: 40%;
 }
+.column-art {
+  width: 33%;
+}
 .column-image {
   margin-bottom: 30px;
 }
